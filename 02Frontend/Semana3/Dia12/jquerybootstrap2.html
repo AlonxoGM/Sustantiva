@@ -1,86 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Educativa con jQuery y Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Carrusel Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
 
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Mi Sitio Web</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Características</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Precios</a>
-                </li>
-            </ul>
+<div class="container text-center">
+  <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col">
+            <div class="card h-100">
+              <img src="Assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PANQUEQUES CON MANJAR Y CREMA</h5>
+                <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="Assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TIRAMISÚ</h5>
+                <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="Assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PLATEADA</h5>
+                <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus..</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
-
-    <!-- Carrusel de Imágenes -->
-    <div id="carruselImagenes" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Primera+Imagen" alt="Primera imagen">
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col">
+            <div class="card h-100">
+              <img src="Assets/img/recipe-card-4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ENSALADA CÉSAR</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac laoreet nunc, id fermentum arcu.</p>
+              </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Segunda+Imagen" alt="Segunda imagen">
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="Assets/img/recipe-card-5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PASTA AL PESTO</h5>
+                <p class="card-text">Vestibulum sit amet ipsum a elit fermentum aliquet. Nulla facilisi. Curabitur non felis ac odio tincidunt dignissim.</p>
+              </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Tercera+Imagen" alt="Tercera imagen">
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="Assets/img/recipe-card-6.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SALMÓN A LA PARRILLA</h5>
+                <p class="card-text">Fusce ut leo ut erat tristique convallis. Duis hendrerit vehicula fringilla. Donec non turpis vitae arcu scelerisque bibendum.</p>
+              </div>
             </div>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#carruselImagenes" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carruselImagenes" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
+      </div>
+      <!-- Repite para más diapositivas del carrusel si es necesario -->
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#recipeCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#recipeCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
 
-    <!-- Formulario de Contacto -->
-    <div class="container mt-4">
-        <h2>Contacta con Nosotros</h2>
-        <form id="formularioContacto">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </div>
-
-    <script>
-        $(document).ready(function(){
-            $("#formularioContacto").submit(function(event){
-                event.preventDefault(); // Evita el envío por defecto del formulario.
-                var nombre = $("#nombre").val();
-                var email = $("#email").val();
-                alert("Gracias por contactarnos, " + nombre + ". Te responderemos a " + email + ".");
-            });
-        });
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>
